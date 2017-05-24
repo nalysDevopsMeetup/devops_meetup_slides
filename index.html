@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+	</head>
+	<body>
+
+		<!--
+		###########################################
+							SLIDES
+		###########################################
+		-->
+		<div class="reveal">
+			<div class="slides">
+
+				<!--
+				###########################################
+								INTRO
+				###########################################
+				-->
+				<section data-timing="70">
+					<h2>An introduction to DevOps</h2>
+					<h4> - </h4>
+					<h4>Belgium DevOps Meetup</h4>
+
+					<aside class="notes">
+						- WELCOME <br/>
+						- FIRST Meetup around devops <br/>
+						- More to come (tools like Jenkins ...)
+					</aside>
+				</section>
+
+
+				<section data-timing="40">
+					<h4>MCH</h4>
+				</section>
+
+
+				<section data-timing="40">
+					<p data-fragment-index="1" > Define DevOps </p>
+					<p class="fragment" data-fragment-index="2" > Tools </p>
+					<p class="fragment" data-fragment-index="3" > Case study </p>
+				</section>
+
+
+				<!--
+				###########################################
+							PART 1 : DEFINITION
+				###########################################
+				-->
+				<section data-timing="30">
+					<h4>What is DevOps ?</h4>
+					
+					<aside class="notes">
+						-> Not gonna answer ! <br/>
+						-> Give rough definition <br/>
+						-> Everyone will build it's own view
+					</aside>
+				</section>
+
+				<section data-timing="40">
+					<h3>This presentation <span style="color:green;"> will</span> :</h3>
+					<ul>
+						<li class="fragment">Describe the movement origin</li>
+						<li class="fragment">Hint on why it exists</li>
+						<li class="fragment">Clarify what it is or not</li>
+					</ul>
+					
+					<aside class="notes">
+						ORIGIN : comes from agility -> seen later
+					</aside>
+				</section>
+
+				<section data-timing="40">
+					<h3>This presentation <b style="color:red;"">will NOT</b> :</h3>
+					<ul>
+						<li class="fragment">Be exhaustive</li>
+						<li class="fragment">Be objective</li>
+						<li class="fragment">Be a ready to use pack of solutions</li>
+					</ul>
+					
+					<aside class="notes">
+						- Exhaustive : A LOT to cover, here : give entrypoint and main ideas <br/>
+						- Objective : each one has it's own view <br/>
+						- Objective : this presentation is my point of view and me trying to give to you the most open way possible <br/>
+						- Ready to Use : as agility : CANNOT be applied by copy/paste
+					</aside>
+				</section>
+
+				<section data-timing="40">
+					<h3>Quick history</h3>
+					<ul>
+						<li class="fragment">From <i>agility</i> to <i>"Agile Infrastructure"</i></li>
+						<li class="fragment">"DevOps" - <i>Patrick Debois, 2009</i></li>
+						<li class="fragment">New movement</li>
+					</ul>
+					
+					<aside class="notes">
+						- POINT 1 :<br/>
+						  Agile conference 2008 <br/>
+						  agility reqires frequent delivery and quality checks => agile infrastructure <br/>
+
+						<br/>
+
+						- POINT 2 :<br/>
+						  "devopsdays" => Gent => Belgian FLAG !
+		
+					</aside>
+				</section>
+
+				<section id="agile-infrastructure" data-timing="40">
+					<h3>The Agile infrastructure</h3>
+					
+					<div id="ai-business" class="fragment" data-fragment-index="2" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> BUSINESS </div>
+
+						<div id="ai-agile" class="fragment" data-fragment-index="4" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 220px; height: 220px; vertical-align: middle; line-height: 220px;"> AGILE </div>
+
+					<div id="ai-dev" class="fragment" data-fragment-index="1" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> DEVELOPMENT </div>
+
+						<div id="ai-devops" class="fragment" data-fragment-index="5" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 220px; height: 220px; vertical-align: middle; line-height: 220px;"> DEVOPS </div>
+
+					<div id="ai-ops" class="fragment" data-fragment-index="3" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> OPERATIONS </div>
+
+
+					<aside class="notes">
+					</aside>
+				</section>
+				<!--
+				###########################################
+							PART 2 : TOOLS
+				###########################################
+				-->
+
+
+				<!--
+				###########################################
+								CONCLUSION
+				###########################################
+				-->
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--
+		###########################################
+						REVEAL INIT
+		###########################################
+		-->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				// Display controls in the bottom right corners
+				controls: false,
+				// Display a presentation progress bar
+				progress: true,
+				// Set default timing of 2 minutes per slide
+				defaultTiming: 90,
+				// Display the page number of the current slide
+				slideNumber: true,
+				// Push each slide change to the browser history
+				history: true,
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+				// Enable the slide overview mode
+				overview: false,
+				// Vertical centering of slides
+				center: true,
+				// Enables touch navigation on devices with touch input
+				touch: false,
+				// Loop the presentation
+				loop: false,
+				// Change the presentation direction to be RTL
+				rtl: false,
+				// Randomizes the order of slides each time the presentation loads
+				shuffle: false,
+				// Turns fragments on and off globally
+				fragments: true,
+				// Flags if the presentation is running in an embedded mode,
+				// i.e. contained within a limited portion of the screen
+				embedded: false,
+				// Flags if we should show a help overlay when the questionmark
+				// key is pressed
+				help: false,
+				// Flags if speaker notes should be visible to all viewers
+				showNotes: false,
+				// Global override for autolaying embedded media (video/audio/iframe)
+				// - null: Media will only autoplay if data-autoplay is present
+				// - true: All media will autoplay, regardless of individual setting
+				// - false: No media will autoplay, regardless of individual setting
+				autoPlayMedia: null,
+				// Number of milliseconds between automatically proceeding to the
+				// next slide, disabled when set to 0, this value can be overwritten
+				// by using a data-autoslide attribute on your slides
+				autoSlide: 0,
+				// Stop auto-sliding after user input
+				autoSlideStoppable: true,
+				// Use this method for navigation when auto-sliding
+				autoSlideMethod: Reveal.navigateNext,
+				// Enable slide navigation via mouse wheel
+				mouseWheel: false,
+				// Hides the address bar on mobile devices
+				hideAddressBar: true,
+				// Opens links in an iframe preview overlay
+				previewLinks: false,
+				// Transition style
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Transition speed
+				transitionSpeed: 'default', // default/fast/slow
+				// Transition style for full page slide backgrounds
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+				// Number of slides away from the current that are visible
+				viewDistance: 3,
+				// Parallax background image
+				parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+				// Parallax background size
+				parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+				// Number of pixels to move the parallax background per slide
+				// - Calculated automatically unless specified
+				// - Set to 0 to disable movement along an axis
+				parallaxBackgroundHorizontal: null,
+				parallaxBackgroundVertical: null,
+				// The display mode that will be used to show slides
+				display: 'block',
+				dependencies: [
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
