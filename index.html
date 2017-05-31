@@ -19,7 +19,7 @@
 								INTRO
 				###########################################
 				-->
-				<section data-timing="70">
+				<section>
 					<h2>An introduction to DevOps</h2>
 					<h4> - </h4>
 					<h4>Belgium DevOps Meetup</h4>
@@ -32,15 +32,24 @@
 				</section>
 
 
-				<section data-timing="40">
+				<section data-timing="50">
 					<h4>Hi !</h4>
+					<aside class="notes">
+						Include Quentin ?
+					</aside>
 				</section>
 
 
-				<section data-timing="40">
-					<p data-fragment-index="1" > "Define" DevOps </p>
+				<section data-timing="50">
+					<h4>Tonight</h4>
+					
+					<p class="fragment" data-fragment-index="1" > DevOps "definition" </p>
 					<p class="fragment" data-fragment-index="2" > Tools </p>
 					<p class="fragment" data-fragment-index="3" > Case study </p>
+
+					<aside class="notes">
+						To keep ? (depends on the way the meetup is introduced)
+					</aside>
 				</section>
 
 
@@ -49,12 +58,12 @@
 							PART 1 : DEFINITION
 				###########################################
 				-->
-				<section data-timing="30">
+				<section data-timing="40">
 					<div style="position: relative; width: 100%; height: 100px; vertical-align: middle; ">
 						<h4 style="position: absolute; z-index: 1; width: 100%; height: 100%; top:0; right:0; bottom:0; left:0; vertical-align: middle; line-height: 100px; ">
 							What is DevOps ?
 						</h4>
-						<div class="fragment" style="z-index: 2; position: absolute; left: 0; right: 0; font-size: 20px; width: 100%; height: 100%; padding: 0; margin: 0; background: linear-gradient(to right top, transparent 47.75%, red, red, transparent 52.25%),linear-gradient(to left top, transparent 47.75%, red, red, transparent 52.25%);" ></div>
+						<div class="fragment" style="z-index: 2; position: absolute; left: 0; right: 0; font-size: 20px; width: 50%; left:25%; height: 100%; padding: 0; margin: 0; background: linear-gradient(to right top, transparent 47.75%, red, red, transparent 52.25%),linear-gradient(to left top, transparent 47.75%, red, red, transparent 52.25%);" ></div>
 						</div>
 
 					<aside class="notes">
@@ -64,17 +73,17 @@
 					</aside>
 				</section>
 
-				<section data-timing="7">
+				<section data-timing="15">
 					<h4>DevOps is unique to YOUR project</h4>
 					<aside class="notes">
 					</aside>
 				</section>
 
-				<section data-timing="40">
+				<section data-timing="60">
 					<h3>This presentation <span style="color:green;"> will</span> :</h3>
 					<ul>
-						<li class="fragment">Describe the movement origin</li>
-						<li class="fragment">Reasons it exists</li>
+						<li class="fragment">Hint on the trend origin</li>
+						<li class="fragment">Try to answer "why" DevOps</li>
 						<li class="fragment">Clarify what it is or not</li>
 					</ul>
 					
@@ -83,7 +92,7 @@
 					</aside>
 				</section>
 
-				<section data-timing="40">
+				<section data-timing="80">
 					<h3>This presentation <b style="color:red;"">will NOT</b> :</h3>
 					<ul>
 						<li class="fragment">Be exhaustive</li>
@@ -100,131 +109,167 @@
 					</aside>
 				</section>
 
-				<section data-timing="40">
+				<section>
 					<h3>Quick history</h3>
 					<ul>
 						<li class="fragment">From <i>agility</i> to <i>"Agile Infrastructure"</i></li>
-						<li class="fragment">"DevOps" - <i>Patrick Debois, 2009</i></li>
-						<li class="fragment">New movement</li>
+						<li class="fragment" style="height:100%; line-height: 100%; vertical-align: middle;">
+
+							<span style="width: 60px; height: 60px;">
+								<svg width="60" height="60" style="border-radius: 50%">
+									<rect x="0" y="0" width="21" height="60" style="fill:#000000);" />
+									<rect x="21" y="0" width="18" height="60" style="fill:#FAE042;" />
+									<rect x="39" y="0" width="21" height="60" style="fill:#ED2939" />
+								</svg>
+							<span>
+							DevOps" - <i>Patrick Debois, 2009</i>
+						</li>
+						<li class="fragment">"Old" concepts</li>
+						<li class="fragment">New trend</li>
 					</ul>
 					
 					<aside class="notes">
-						- POINT 1 :<br/>
-						  Agile conference 2008 <br/>
-						  agility reqires frequent delivery and quality checks => agile infrastructure <br/>
+						- "Agile Infrastructure" : Agile conference 2008 <br/>
+						  => agility reqires frequent delivery and quality checks => agile infrastructure <br/>
 
 						<br/>
 
-						- POINT 2 :<br/>
-						  After work with Andrew Shafer (cf https://blog.newrelic.com/2014/05/16/devops-name/) <br/>
-						  "devopsdays" => Gent => Belgian FLAG !
+						- DevOps : After work/speaks with Andrew Shafer<br/>
+						(cf https://blog.newrelic.com/2014/05/16/devops-name/) <br/>
+
+						<br/>
+
+						- old concepts, caalyzed and aggregated into devops -> new
 		
 					</aside>
 				</section>
 
-				<section id="agile-infrastructure" data-timing="40">
+				<section id="agile-infrastructure">
 					<h3>The Agile infrastructure</h3>
 					
-					<div id="ai-business" class="fragment" data-fragment-index="2" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> BUSINESS </div>
+					<div id="ai-business" class="fragment" data-fragment-index="2" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative">BUSINESS </div>
 
-						<div id="ai-agile" class="fragment" data-fragment-index="4" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> AGILE </div>
+					<div id="ai-agile" class="fragment" data-fragment-index="4" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> AGILE </div>
 
 					<div id="ai-dev" class="fragment" data-fragment-index="1" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> DEVELOPMENT </div>
 
-						<div id="ai-devops" class="fragment" data-fragment-index="5" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> DEVOPS </div>
+					<div id="ai-devops" class="fragment" data-fragment-index="5" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> DEVOPS </div>
 
 					<div id="ai-ops" class="fragment" data-fragment-index="3" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> OPERATIONS </div>
 
-
 					<aside class="notes">
 						- Agility : here to reconcile management (business) and developers <br/>
-						- Devops : originally here to reconcile devs and ops in order to fulfill agility needs <br/>
-						- both exists in order to improve the business line 
+
+						- Devops : originally here to reconcile devs and ops in order to fulfill agility needs to have quality engineering (also on infra) <br/>
+						- <b>BOTH EXISTS IN ORDER TO IMPROVE THE BUSINESS LINE</b>
+						- Not necessary to have both <br/>
 					</aside>
 				</section>
 
-				<section id="dev-and-ops-1" data-timing="40" data-transition="fade-out">
-					<h3>A story about Devs and Ops</h3>
+				<section id="dev-and-ops-1" data-timing="50" data-transition="fade-out">
+					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
 					
 					<img class="fragment" id="thewall1" src="./assets/thewall1.jpg" style="border: none; box-shadow: none" />
 					
 					<aside class="notes">
-
+						- different concerns <br/>
+						- different cultures <br/>
+						- dev = product ( improvements / features )<br/>
+						- ops = service ( backups / supervision ) 	
 					</aside>
 				</section>
 
-				<section id="dev-and-ops-2" data-timing="40" data-transition="fade-in">
-					<h3>A story about Devs and Ops</h3>
+				<section id="dev-and-ops-2" data-transition="fade-in">
+					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
 					
 					<img id="thewall2" src="./assets/thewall2.jpg" style="border: none; box-shadow: none" />
 					
 					<aside class="notes">
-						- Break old habits
+						- same global objective : <br/>
+						-- system working from outside
+						-- client satisfaction
+
+						- those are the "original" facts
+						- DevOps is not limiting to that, wants to be open
 					</aside>
 				</section>
 
-				<section id="dev-and-ops-3" data-timing="40">
+				<section id="dev-and-ops-3" data-timing="60">
 					<h3>A story about Devs and Ops</h3>
 					
 					<ul>
-						<li class="fragment">Unified processes</li>
-						<li class="fragment">Unified tooling</li>
 						<li class="fragment">Change culture</li>
-						<li class="fragment">Measure it !</li>
+						<li class="fragment">Unifiy processes</li>
+						<li class="fragment">Unifiy tooling</li>
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>Automation of manual tasks</li>
-							<li>optimize Time To Market / Time to Delivery</li>
-							<li>For example Continuous Delivery => use a beer truck vs use a beer pipeline</li>
-							<li></li>
+							- Break old habits <br/>
+							- Use incentives to change culture <br/>
+							- Measure and show progress to move towards employee hapinness <br/>
+							- remove notion of silo => not only<br/>
 						</ul>
+					</aside>
+				</section>
+
+				<section id="problem-location" data-timing="40">
+					<h3>But not only !</h3>
+					<i>A problem occuring between devs and ops might find it's solution elsewhere</i>
+					<aside class="notes">
+						-Think about the wall <br/>
+						=> a business throwing specs and sold stuff to devs <br/>
+						=> a QA throwing a "bug" back to devs <br/>
+						etc ...
 					</aside>
 				</section>
 
 				<section id="not-only" data-timing="40">
 					<h3>But not only !</h3>
-					
 					<ul>
-						<li class="fragment">Solve business problems</li>
-						<li class="fragment">Involve everyone</li>
-						<li class="fragment">Break silos</li>
-						<li class="fragment">Deliver faster, collaborate faster</li>
+						<li class="fragment" data-fragment-index="1">Solve business problems</li>
+						<li class="fragment" data-fragment-index="2">Break silos</li>
+						<li class="fragment" data-fragment-index="2">Involve everyone</li>
+						<li class="fragment" data-fragment-index="3">Deliver faster, collaborate faster</li>
 					</ul>
 					<aside class="notes">
-						<ul>
-							<li>DevOps is not about process/tools/etc, it's about business problems</li>
-							<li>If problem is between devs and ops, action might by elsewhere</li>
-							<li>Involve marketin, business, security, QA ...</li>
-							<li>For example Continuous Delivery => use a beer truck vs use a beer pipeline</li>
-						</ul>
+						<li>DevOps is not about process/tools/etc, it's about business problems</li>
+						<li>Involve marketing, business, security, QA ...</li>
 					</aside>
 				</section>
 
 
-				<section id="what-it-is" data-timing="40">
-					<h3>What is is (but not only)</h3>
-					<ul>
-					</ul>
-					<aside class="notes">
+				<section id="what-it-is-not" data-timing="60">
+					<h3>What it is not</h3>
 						<ul>
+							<li class="fragment"> Removing Ops</li>
+							<li class="fragment"> Just Tools</li>
+							<li class="fragment"> Just Culture</li>
+							<li class="fragment"> Just Devs and Ops</li>
+							<li class="fragment"> A full job title</li>
 						</ul>
+					<aside class="notes">
+						- this slide = Avoid confusion <br/>
+						- break preconceived idea <br/>
+						- NoOps : automation affects devs AND ops => work together and better
 					</aside>
 				</section>
 
-				<section id="what-is-is-not" data-timing="40">
-					<h3>What is is not</h3>
-					<ul>
-					</ul>
-					<aside class="notes">
+				<section id="so-why" data-timing="60">
+					<h3>So why ?</h3>
 						<ul>
+							<li class="fragment" >Teamwork</li>
+							<li class="fragment" >Reduce frustration</li>
+							<li class="fragment" >Better agility</li>
+							<li class="fragment" >Increase quality</li>
+							<li class="fragment" >Reduce Time To Market</li>
 						</ul>
+					<aside class="notes">
+						- TTM : One of the main "goal" of devops <br/>
 					</aside>
 				</section>
 
-				<section id="tips" data-timing="40">
+				<section id="tips" data-timing="60">
 					<h3>Tips</h3>
-					
 					<ul>
 						<li class="fragment">Don't waterfall DevOps !</i></li>
 						<li class="fragment">Go iterative</i></li>
@@ -232,31 +277,30 @@
 						<li class="fragment">People and culture first, tools second</li>
 					</ul>
 					<aside class="notes">
-						<ul>
-							<li>DevOps is an outgrowth of agility</li>
-							<li>Measure is good for team & business !</li>
-							<li>tools with no culture = WASTE</li>
-						</ul>
+						- DevOps is an outgrowth of agility <br/>
+						- Measure is good for team & business ! <br/>
+						- tools with no culture = WASTE <br/>
 					</aside>
 				</section>
 				<!--
 				###########################################
-							PART 2 : TOOLS
+						PART 2 : TOOLS/CONCEPTS
 				###########################################
 				-->
 
-				<section id="tools" data-timing="25">
+				<section id="tools" data-timing="40">
 					<h3>Tools</h3>
 					<aside class="notes">
-						<ul>
-							<li>First some tooling concepts</li>
-							<li>Some examples of tools</li>
-							<li>Quentin will detail concrete usages</li>
-						</ul>
+						- First some tooling & concepts <br/>
+						- Some examples of tools <br/>
+						- Quentin will detail concrete usages <br/>
+						- Mainly focused on dev (everything before release) and ops (everything from release) <br/>
+						- You may not need everything <br/>
+						- <b>Catalyzer of culture => no culture = tools are waste ! </b> <br/>
 					</aside>
 				</section>
 
-				<section id="tools-concepts" data-timing="25">
+				<section id="tools-concepts" data-timing="30">
 					<h3>A lot of magic keyworkds</h3>
 					<ul>
 						<li class="fragment">Automation</li>
@@ -266,16 +310,15 @@
 						<li class="fragment">etc ...</li>
 					</ul>
 					<aside class="notes">
-						<ul>
-							<li>A lot of words covering part of Devops</li>
-							<li>Identify why => how => what</li>
-							<li>It all gets into the toolchain</li>
-						</ul>
+						- A lot of words covering part of Devops <br/>
+						- Identify why => how => what <br/>
+						- It all gets towards the implementation (toolchain and processes) <br/>
+						- insist on deployment, only part of it <br/>
+						- For example Continuous Delivery/deployment => use a beer truck vs use a beer pipeline <br/>
 					</aside>
 				</section>
 
-				<section id="toolchain" data-timing="25">
-				<style type="text/css"></style>
+				<section id="toolchain" data-timing="100">
 					<h3>The toolchain</h3>
 					
 					<div style="width:1200px; height:100px; padding-top:10px">
@@ -305,12 +348,93 @@
 						</svg>
 					</div>
 					<aside class="notes">
-						<ul>
-							<li>Mainly focused on dev (everything before release) and ops (everything from release)</li>
-							<li>You may not need everything</li>
-							<li>Powerfull because chaining all advantages</li>
-							<li>Catalyzer of culture</li>
-						</ul>
+						This is a "generic flow" => you take what you need / add some and <b>adapt</b> it <br/><br/>
+
+						- <b>CODE:</b> Code review, version control, merges ...
+						- <b>TESTS:</b> functionnal AND performance
+						- <b>PACKAGE:</b> artifacts storage, pre-release staging
+						- <b>RELEASE:</b> Change management, release validation and automation
+						- <b>CONFIGURE:</b> Manage and configure infrastructure / Infra As Code
+						- <b>MONITOR:</b> Performance, availability, functional, end user
+					</aside>
+				</section>
+
+				<section id="stack-example">
+					<h3>A stack example</h3>
+					
+					<div style="width:1200px; height:100px; padding-top:10px">
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#159dff" stroke-width="5"></polygon>
+							<text x="44" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CREATE</text>
+						</svg>
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#d84c2d" stroke-width="5"></polygon>
+							<text x="49" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >VERIFY</text>
+						</svg>
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#90be4f" stroke-width="5"></polygon>
+							<text x="34" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >PACKAGE</text>
+						</svg>
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#9249c9" stroke-width="5"></polygon>
+							<text x="36" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >RELEASE</text>
+						</svg>
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ff2626" stroke-width="5"></polygon>
+							<text x="20" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CONFIGURE</text>
+						</svg>
+						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ffc715" stroke-width="5"></polygon>
+							<text x="31" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >MONITOR</text>
+						</svg>
+					</div>
+					<table style="font-size: 40px; color: #dddddd">
+						<tr>
+							<td>
+								<table style="font-size: 40px; color: #dddddd">
+									<tr>
+										<td>Git/Github</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table style="font-size: 40px; color: #dddddd">
+									<tr>
+										<td>maven</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table style="font-size: 40px; color: #dddddd">
+									<tr>
+										<td>nexus</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table style="font-size: 40px; color: #dddddd">
+									<tr>
+										<td>Docker</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table style="font-size: 40px; color: #dddddd">
+									<tr>
+										<td>Kibana</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid #cccccc; text-align:	center" colspan="3">Jenkins</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<aside class="notes">
+						example to show chaining of tools <br/>
+						again, not exhaustive, may not apply (entirely) to you
 					</aside>
 				</section>
 				<!--
@@ -318,17 +442,65 @@
 								CONCLUSION
 				###########################################
 				-->
+
+				<section id="tldl" data-timing="10">
+					<h3>TLDL in 5 points</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="silos" data-timing="25">
+					<h4>1. Break Silos</h4>
+					<img id="thewall2" src="./assets/collaboration.jpg" style="border: none; box-shadow: none" />
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="iterative" data-timing="25">
+					<h4>2. Go iterative</h4>
+					<img id="thewall2" src="./assets/iterative.jpg" style="border: none; box-shadow: none" />
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="measure" data-timing="25">
+					<h4>3. Measure progress</h4>
+					<img id="thewall2" src="./assets/measure.jpg" style="border: none; box-shadow: none" />
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="fail" data-timing="25">
+					<h4>4. It is ok to fail</h4>
+					<img id="thewall2" src="./assets/fail.jpg" style="border: none; box-shadow: none" />
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="unique" data-timing="25">
+					<h4>5. DevOps is unique to your project</h4>
+					<img id="thewall2" src="./assets/unique.jpg" style="border: none; box-shadow: none" />
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section id="thank-you" data-timing="15">
+					<h2>Thank you !</h2>
+				</section>
+
+				<section id="sources" data-timing="5">
+					<h4>Sources</h4>
+					<p>Work in progress</p>
+					<!-- list all sources (and images) -->
+					<!-- Lego images: https://www.flickr.com/photos/23950335@N07/ -->
+				</section>
+
+				<section id="questions-time" data-timing="25">
+					<h2>Questions time</h2>
+				</section>
+
 			</div>
 		</div>
-
-<!-- Appendix sources -->
-
-<!-- Lego images: https://www.flickr.com/photos/23950335@N07/ -->
-
-
-
-
-
 
 
 
@@ -349,7 +521,7 @@
 				// Display a presentation progress bar
 				progress: true,
 				// Set default timing of 2 minutes per slide
-				defaultTiming: 90,
+				defaultTiming: 70,
 				// Display the page number of the current slide
 				slideNumber: true,
 				// Push each slide change to the browser history
