@@ -2,7 +2,8 @@
 	<head>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jqcloud.css" />
 	</head>
 	<body>
 
@@ -33,16 +34,8 @@
 
 
 				<section data-timing="50">
-					<h4>Hi !</h4>
-					<aside class="notes">
-						Include Quentin ?
-					</aside>
-				</section>
-
-
-				<section data-timing="50">
 					<h4>Tonight</h4>
-					
+
 					<p class="fragment" data-fragment-index="1" > DevOps "definition" </p>
 					<p class="fragment" data-fragment-index="2" > Tools </p>
 					<p class="fragment" data-fragment-index="3" > Case study </p>
@@ -53,12 +46,37 @@
 				</section>
 
 
+
+				<section data-timing="50" style="line-height:1.2em;">
+					<h2 style="margin-bottom: 35px;">Hi !</h2>
+					<img id="hi" src="./assets/42.jpg" style="border: none; box-shadow: none; float: left; height: 300px; width: 300px; border-radius:50%;" />
+
+					<ul>
+						<li>MAXIME CHOFFAT</li>
+						<ul style="margin-bottom: 0.8em;">
+							<li>IT Consultant @Nalys</li>
+							<li>Agile & DevOps enthousiast</li>
+							<li><i class="fa fa-gamepad" aria-hidden="true"></i> Games lover</li>
+						</ul>
+						<li>Contact :</li>
+						<ul>
+							<li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/Mr_Randol">Mr_Randol</a></li>
+							<li><i class="fa fa-github"  aria-hidden="true"></i> <a href="https://github.com/MrRandol">MrRandol</a></li>
+							<li><i class="fa fa-twitter" aria-hidden="true"></i> <a href="mailto:maxime.choffat@gmail.com">maxime.choffat@gmail.com</a></li>
+						</ul>
+					</ul>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+
 				<!--
 				###########################################
 							PART 1 : DEFINITION
 				###########################################
 				-->
-				<section data-timing="40">
+				<section data-timing="70">
 					<div style="position: relative; width: 100%; height: 100px; vertical-align: middle; ">
 						<h4 style="position: absolute; z-index: 1; width: 100%; height: 100%; top:0; right:0; bottom:0; left:0; vertical-align: middle; line-height: 100px; ">
 							What is DevOps ?
@@ -67,15 +85,35 @@
 						</div>
 
 					<aside class="notes">
-						-> Not gonna answer ! <br/>
-						-> Give rough definition <br/>
-						-> Everyone will build its own view
+						==> What is Devops for YOU ? <== <br /><br />
+
+						-> Not gonna answer ! <br />
+						-> Give rough definition <br />
+						-> Everyone will build its own view <br />
+						-> Reason is (next slide)
 					</aside>
 				</section>
 
-				<section data-timing="15">
+				<section data-timing="5">
 					<h4>DevOps is unique to YOUR project</h4>
 					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-timing="80">
+					<h3>This presentation <b style="color:red;">will NOT</b> :</h3>
+					<ul>
+						<li class="fragment">Be exhaustive</li>
+						<li class="fragment">Be objective</li>
+						<li class="fragment">Be a ready to use pack of solutions</li>
+					</ul>
+
+					<aside class="notes">
+						- Exhaustive : A LOT to cover => entrypoints and main ideas <br/>
+						- Exhaustive : not really limited <br/>
+						- Objective : each one has it's own view <br/>
+						- Objective : this presentation is my point of view and me trying to give to you the most open way possible <br/>
+						- Ready to Use : as agility : CANNOT be applied by copy/paste
 					</aside>
 				</section>
 
@@ -86,26 +124,9 @@
 						<li class="fragment">Try to answer "why" DevOps</li>
 						<li class="fragment">Clarify what it is or not</li>
 					</ul>
-					
+
 					<aside class="notes">
 						ORIGIN : comes from agility -> seen later
-					</aside>
-				</section>
-
-				<section data-timing="80">
-					<h3>This presentation <b style="color:red;"">will NOT</b> :</h3>
-					<ul>
-						<li class="fragment">Be exhaustive</li>
-						<li class="fragment">Be objective</li>
-						<li class="fragment">Be a ready to use pack of solutions</li>
-					</ul>
-					
-					<aside class="notes">
-						- Exhaustive : A LOT to cover => entrypoints and main ideas <br/>
-						- Exhaustive : not really limited <br/>
-						- Objective : each one has it's own view <br/>
-						- Objective : this presentation is my point of view and me trying to give to you the most open way possible <br/>
-						- Ready to Use : as agility : CANNOT be applied by copy/paste
 					</aside>
 				</section>
 
@@ -127,7 +148,7 @@
 						<li class="fragment">"Old" concepts</li>
 						<li class="fragment">New trend</li>
 					</ul>
-					
+
 					<aside class="notes">
 						- "Agile Infrastructure" : Agile conference 2008 <br/>
 						  => agility reqires frequent delivery and quality checks => agile infrastructure <br/>
@@ -140,13 +161,13 @@
 						<br/>
 
 						- old concepts, caalyzed and aggregated into devops -> new
-		
+
 					</aside>
 				</section>
 
 				<section id="agile-infrastructure">
 					<h3>The Agile infrastructure</h3>
-					
+
 					<div id="ai-business" class="fragment" data-fragment-index="2" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative">BUSINESS </div>
 
 					<div id="ai-agile" class="fragment" data-fragment-index="4" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> AGILE </div>
@@ -168,22 +189,22 @@
 
 				<section id="dev-and-ops-1" data-timing="50" data-transition="fade-out">
 					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
-					
+
 					<img class="fragment" id="thewall1" src="./assets/thewall1.jpg" style="border: none; box-shadow: none" />
-					
+
 					<aside class="notes">
 						- different concerns <br/>
 						- different cultures <br/>
 						- dev = product ( improvements / features )<br/>
-						- ops = service ( backups / supervision ) 	
+						- ops = service ( backups / supervision )
 					</aside>
 				</section>
 
 				<section id="dev-and-ops-2" data-transition="fade-in">
 					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
-					
+
 					<img id="thewall2" src="./assets/thewall2.jpg" style="border: none; box-shadow: none" />
-					
+
 					<aside class="notes">
 						- same global objective : <br/>
 						-- system working from outside
@@ -191,24 +212,6 @@
 
 						- those are the "original" facts
 						- DevOps is not limiting to that, wants to be open
-					</aside>
-				</section>
-
-				<section id="dev-and-ops-3" data-timing="60">
-					<h3>A story about Devs and Ops</h3>
-					
-					<ul>
-						<li class="fragment">Change culture</li>
-						<li class="fragment">Unify processes</li>
-						<li class="fragment">Unify tooling</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							- Break old habits <br/>
-							- Use incentives to change culture <br/>
-							- Measure and show progress to move towards employee hapinness <br/>
-							- remove notion of silo => not only<br/>
-						</ul>
 					</aside>
 				</section>
 
@@ -233,9 +236,9 @@
 					<aside class="notes">
 						<li>DevOps is not about process/tools/etc, it's about business problems</li>
 						<li>Involve marketing, business, security, QA ...</li>
+						<li>It comes from project, but can be extended to the whole organisation</li>
 					</aside>
 				</section>
-
 
 				<section id="what-it-is-not" data-timing="60">
 					<h3>What it is not</h3>
@@ -263,7 +266,27 @@
 							<li class="fragment" >Reduce Time To Market</li>
 						</ul>
 					<aside class="notes">
-						- TTM : One of the main "goal" of devops <br/>
+						-> Emphathize this ! <br />
+						-> teamwork => communication <br />
+						-> TTM : One of the main "goal" of devops <br/>
+					</aside>
+				</section>
+
+				<section id="how" data-timing="60">
+					<h3>How ?</h3>
+
+					<ul>
+						<li class="fragment">Change culture</li>
+						<li class="fragment">Unify processes</li>
+						<li class="fragment">Unify tooling</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							- Break old habits <br/>
+							- Use incentives to change culture <br/>
+							- Measure and show progress to move towards employee hapinness <br/>
+							- remove notion of silo => not only<br/>
+						</ul>
 					</aside>
 				</section>
 
@@ -276,11 +299,16 @@
 						<li class="fragment">People and culture first, tools second</li>
 					</ul>
 					<aside class="notes">
+						GIVE (AND BUILD ) EXAMPLES
+
 						- DevOps is an outgrowth of agility <br/>
 						- Measure is good for team & business ! <br/>
 						- tools with no culture = WASTE <br/>
 					</aside>
 				</section>
+
+				<!-- DO HERE TRANSITION / SUMMARY -->
+
 				<!--
 				###########################################
 						PART 2 : TOOLS/CONCEPTS
@@ -300,14 +328,59 @@
 				</section>
 
 				<section id="tools-concepts" data-timing="30">
-					<h3>A lot of magic keyworkds</h3>
-					<ul>
-						<li class="fragment">Automation</li>
-						<li class="fragment">Continuous Integration/Deployment</li>
-						<li class="fragment">Infrastructure As Code</li>
-						<li class="fragment">Virtualization</li>
-						<li class="fragment">etc ...</li>
-					</ul>
+					<h3>A lot of magic keywords</h3>
+
+					<div id="wordcloud" style="width: 100%; height: 500px; position: relative;"></div>
+					<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+					<script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
+					<script>
+
+						$(document).ready(function() {
+							var words = [
+								"Automation",
+								"Virtualization",
+								"Jenkins",
+								"Maven",
+								"Git",
+								"Docker",
+								"Cloud",
+								"Continuous Integration",
+								"Continuous Deployment",
+								"ElasticSearch",
+								"Monitoring",
+								"PaaS",
+								"IaaS",
+								"Vagrant",
+								"Ansible",
+								"Puppet",
+								"chef",
+								"Gitlab",
+								"process",
+								"integration",
+								"Time To Market",
+								"AWS",
+								"software",
+								"bash",
+								"agile",
+								"infrastructure",
+								"scripting",
+								"monolith",
+								"microservices",
+								"toolchain"
+							];
+							var word_list = [];
+
+							for (var i=0; i<words.length; i++) {
+								var new_word = {};
+								new_word.text = words[i];
+								new_word.weight = Math.floor((Math.random() * 10) + 1);
+								word_list.push(new_word);
+							}
+
+						  $("#wordcloud").jQCloud(word_list);
+						});
+					</script>
+
 					<aside class="notes">
 						- A lot of words covering part of Devops <br/>
 						- Identify why => how => what <br/>
@@ -319,7 +392,7 @@
 
 				<section id="toolchain" data-timing="100">
 					<h3>The toolchain</h3>
-					
+
 					<div style="width:1200px; height:100px; padding-top:10px">
 						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
 							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#159dff" stroke-width="5"></polygon>
@@ -347,6 +420,9 @@
 						</svg>
 					</div>
 					<aside class="notes">
+						DO YOU KNOW WHAT IT IS ?
+						It is the concept of chaining diffent tools together to make them more powerful
+
 						This is a "generic flow" => you take what you need / add some and <b>adapt</b> it <br/><br/>
 
 						- <b>CODE:</b> Code review, version control, merges ...
@@ -360,7 +436,7 @@
 
 				<section id="stack-example">
 					<h3>A stack example</h3>
-					
+
 					<div style="width:1200px; height:100px; padding-top:10px">
 						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
 							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#159dff" stroke-width="5"></polygon>
