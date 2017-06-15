@@ -46,7 +46,6 @@
 				</section>
 
 
-
 				<section data-timing="50" style="line-height:1.2em;">
 					<h2 style="margin-bottom: 35px;">Hi !</h2>
 					<img id="hi" src="./assets/42.jpg" style="border: none; box-shadow: none; float: left; height: 300px; width: 300px; border-radius:50%;" />
@@ -81,7 +80,7 @@
 						<h4 style="position: absolute; z-index: 1; width: 100%; height: 100%; top:0; right:0; bottom:0; left:0; vertical-align: middle; line-height: 100px; ">
 							What is DevOps ?
 						</h4>
-						<div class="fragment" style="z-index: 2; position: absolute; left: 0; right: 0; font-size: 20px; width: 50%; left:25%; height: 100%; padding: 0; margin: 0; background: linear-gradient(to right top, transparent 47.75%, red, red, transparent 52.25%),linear-gradient(to left top, transparent 47.75%, red, red, transparent 52.25%);" ></div>
+						<div class="fragment" style="z-index: 2; position: absolute; left: 0; right: 0; font-size: 20px; width: 50%; left:25%; height: 100%; padding: 0; margin: 0; background: linear-gradient(to right top, transparent 48.5%, red, red, transparent 51.2%),linear-gradient(to left top, transparent 48.5%, red, red, transparent 51.5%);" ></div>
 						</div>
 
 					<aside class="notes">
@@ -335,7 +334,8 @@
 					<script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
 					<script>
 
-						$(document).ready(function() {
+					var cloudInit = false;
+						function initCloud() {
 							var words = [
 								"Automation",
 								"Virtualization",
@@ -353,20 +353,20 @@
 								"Vagrant",
 								"Ansible",
 								"Puppet",
-								"chef",
+								"Chef",
 								"Gitlab",
-								"process",
-								"integration",
+								"Process",
+								"Integration",
 								"Time To Market",
 								"AWS",
-								"software",
-								"bash",
-								"agile",
-								"infrastructure",
-								"scripting",
-								"monolith",
-								"microservices",
-								"toolchain"
+								"Software",
+								"Bash",
+								"Agile",
+								"Infrastructure",
+								"Scripting",
+								"Monolith",
+								"Microservices",
+								"Toolchain"
 							];
 							var word_list = [];
 
@@ -378,7 +378,7 @@
 							}
 
 						  $("#wordcloud").jQCloud(word_list);
-						});
+						}
 					</script>
 
 					<aside class="notes">
@@ -392,6 +392,47 @@
 
 				<section id="toolchain" data-timing="100">
 					<h3>The toolchain</h3>
+
+					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:220px; padding-top:10px">
+						<div class="fragment" data-fragment-index="1" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; top:0">
+								<!-- create -->
+								<li>Code review</li>
+								<li>version control</li>
+								<li>merge ...</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="0" y1="140" x2="225" y2="140" style="stroke:#159dff;stroke-width:2"></line>
+								<line x1="110" y1="140" x2="110" y2="214" style="stroke:#159dff;stroke-width:2"></line>
+								<circle cx="110" cy="214" r="6" stroke="transparent" fill="#159dff" />
+							</svg>
+						</div>
+						<div class="fragment" data-fragment-index="4" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; top:0;padding-left:30px">
+								<!-- release -->
+								<li>Manage change</li>
+								<li>Validate</li>
+								<li>Automate</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="30" y1="140" x2="290" y2="140" style="stroke:#9249c9;stroke-width:2"></line>
+								<line x1="290" y1="140" x2="290" y2="214" style="stroke:#9249c9;stroke-width:2"></line>
+								<circle cx="290" cy="214" r="6" stroke="transparent" fill="#9249c9"></circle>
+							</svg>
+						</div>
+						<div class="fragment" data-fragment-index="5" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; top:0;">
+								<!-- configure -->
+								<li>Manage infrastructure</li>
+								<li>Infrastructure As Code</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="0" y1="100" x2="330" y2="100" style="stroke:#ff2626;stroke-width:2"></line>
+								<line x1="90" y1="100" x2="90" y2="214" style="stroke:#ff2626;stroke-width:2"></line>
+								<circle cx="90" cy="214" r="6" stroke="transparent" fill="#ff2626"></circle>
+							</svg>
+						</div>
+					</div>
 
 					<div style="width:1200px; height:100px; padding-top:10px">
 						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -419,18 +460,53 @@
 							<text x="31" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >MONITOR</text>
 						</svg>
 					</div>
+
+					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:220px; padding-top:0px">
+						<div class="fragment" data-fragment-index="2" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; bottom:0">
+								<!-- verify -->
+								<li>Functionnal</li>
+								<li>Performance</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="0" y1="130" x2="300" y2="130" style="stroke:#d84c2d;stroke-width:2"></line>
+								<line x1="300" y1="130" x2="300" y2="0" style="stroke:#d84c2d;stroke-width:2"></line>
+								<circle cx="300" cy="6" r="6" stroke="transparent" fill="#d84c2d"></circle>
+							</svg>
+						</div>
+						<div class="fragment" data-fragment-index="3" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; bottom:0">
+								<!-- package -->
+								<li>Articfacts storage</li>
+								<li>Staging</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="0" y1="130" x2="265" y2="130" style="stroke:#90be4f;stroke-width:2"></line>
+								<line x1="100" y1="130" x2="100" y2="0" style="stroke:#90be4f;stroke-width:2"></line>
+								<circle cx="100" cy="6" r="6" stroke="transparent" fill="#90be4f"></circle>
+							</svg>
+						</div>
+						<div class="fragment" data-fragment-index="6" style="float:left;width:398px; height:220px;position:relative">
+							<ul style="position:absolute; bottom:0">
+								<!-- monitor -->
+								<li>Performance & availability</li>
+								<li>Functionnal</li>
+								<li>End user</li>
+							</ul>
+							<svg width="398" height="220" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:0;left:0">
+								<line x1="0" y1="90" x2="380" y2="90" style="stroke:#ffc715;stroke-width:2"></line>
+								<line x1="290" y1="90" x2="290" y2="0" style="stroke:#ffc715;stroke-width:2"></line>
+								<circle cx="290" cy="6" r="6" stroke="transparent" fill="#ffc715"></circle>
+							</svg>
+						</div>
+					</div>
+
 					<aside class="notes">
 						DO YOU KNOW WHAT IT IS ?
 						It is the concept of chaining diffent tools together to make them more powerful
 
 						This is a "generic flow" => you take what you need / add some and <b>adapt</b> it <br/><br/>
 
-						- <b>CODE:</b> Code review, version control, merges ...
-						- <b>TESTS:</b> functionnal AND performance
-						- <b>PACKAGE:</b> artifacts storage, pre-release staging
-						- <b>RELEASE:</b> Change management, release validation and automation
-						- <b>CONFIGURE:</b> Manage and configure infrastructure / Infra As Code
-						- <b>MONITOR:</b> Performance, availability, functional, end user
 					</aside>
 				</section>
 
@@ -667,6 +743,14 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				if (!cloudInit && event.currentSlide.id === "tools-concepts") {
+					initCloud();
+					cloudInit = true;
+				}
+			} );
 		</script>
 	</body>
 </html>
