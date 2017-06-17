@@ -134,8 +134,7 @@
 							<span>
 							DevOps" - <i>Patrick Debois, 2009 (<a href="www.jedi.be"> jedi.be </a>)</i>
 						</li>
-						<li class="fragment">"Old" concepts</li>
-						<li class="fragment">New trend</li>
+						<li class="fragment">Old concepts <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> New Trend</li>
 					</ul>
 
 					<aside class="notes">
@@ -157,6 +156,7 @@
 				<section id="agile-infrastructure">
 					<h3>The Agile infrastructure</h3>
 
+
 					<div id="ai-business" class="fragment" data-fragment-index="2" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative">BUSINESS </div>
 
 					<div id="ai-agile" class="fragment" data-fragment-index="4" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> AGILE </div>
@@ -166,6 +166,10 @@
 					<div id="ai-devops" class="fragment" data-fragment-index="5" style="z-index: 1; background-color: orange; margin: -130px auto; border-radius: 125px; width: 500px; height: 220px; vertical-align: middle; line-height: 220px;"> DEVOPS </div>
 
 					<div id="ai-ops" class="fragment" data-fragment-index="3" style="z-index: 10; background-color: darkslategray; margin: 68px 0; padding: 20px; position: relative"> OPERATIONS </div>
+
+					<img class="fragment" id="business" data-fragment-index="2" src="./assets/business.png" style="background: none;z-index: 11;left:0; top: 80px;height: 250px;position:absolute; border: none; box-shadow: none" />
+					<img class="fragment" id="developer" data-fragment-index="1" src="./assets/developer.png" style="background: none;z-index: 11;right:0; top: 280px;height: 250px;position:absolute; border: none; box-shadow: none" />
+					<img class="fragment" id="operational" data-fragment-index="3	" src="./assets/operational.png" style="background: none;z-index: 11;left:0; top: 480px;height: 250px;position:absolute; border: none; box-shadow: none" />
 
 					<aside class="notes">
 						- Agility : here to reconcile management (business) and developers <br/>
@@ -526,98 +530,92 @@
 				<section id="flow-example">
 					<h3 style="margin-bottom: 10px">A flow example</h3>
 
-					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:220px; padding-top:10px;">
-						<div class="fragment" data-fragment-index="1" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="git" src="./assets/git.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="mercurial" src="./assets/mercurial.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-						</div>
-						<div class="fragment" data-fragment-index="2" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="junit" src="./assets/junit.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="selenium" src="./assets/selenium.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-						</div>
-						<div class="fragment" data-fragment-index="3" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="artifactory" src="./assets/artifactory.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="nexus" src="./assets/nexus.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-						</div>
-						<div class="fragment" data-fragment-index="4" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="ansible" src="./assets/ansible.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="puppet" src="./assets/puppet.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-						</div>
-						<div class="fragment" data-fragment-index="5" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="vagrant" src="./assets/vagrant.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="docker" src="./assets/docker.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-						</div>
-						<div class="fragment" data-fragment-index="6" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
-							<img id="elastic" src="./assets/elastic.png" style="margin:2px auto; display: block; background: none; width: 80px; border:none; box-shadow:none" />
-						</div>
-					</div>
+					<div style="position:relative;">
 
-					<div style="width:1200px; height:100px; padding-top:10px">
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#159dff" stroke-width="5"></polygon>
-							<text x="44" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CREATE</text>
-						</svg>
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#d84c2d" stroke-width="5"></polygon>
-							<text x="49" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >VERIFY</text>
-						</svg>
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#90be4f" stroke-width="5"></polygon>
-							<text x="34" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >PACKAGE</text>
-						</svg>
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#9249c9" stroke-width="5"></polygon>
-							<text x="36" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >RELEASE</text>
-						</svg>
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ff2626" stroke-width="5"></polygon>
-							<text x="20" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CONFIGURE</text>
-						</svg>
-						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ffc715" stroke-width="5"></polygon>
-							<text x="31" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >MONITOR</text>
-						</svg>
-					</div>
+						<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:220px; padding-top:10px; ">
+							<div class="fragment" data-fragment-index="1" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="git" src="./assets/git.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="mercurial" src="./assets/mercurial.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="2" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="junit" src="./assets/junit.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="selenium" src="./assets/selenium.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="3" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="artifactory" src="./assets/artifactory.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="nexus" src="./assets/nexus.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="4" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="ansible" src="./assets/ansible.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="puppet" src="./assets/puppet.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="5" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="vagrant" src="./assets/vagrant.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="docker" src="./assets/docker.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="6" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+								<img id="elastic" src="./assets/elastic.png" style="margin:2px auto; display: block; background: none; width: 80px; border:none; box-shadow:none" />
+							</div>
+						</div>
 
-					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:110px; padding-top:10px">
-						<div class="fragment" data-fragment-index="7" style="float:left; width:398; height:110px; position:relative; text-align: center;">
-							<img id="gitlab" src="./assets/gitlab.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="bitbucket" src="./assets/bitbucket.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="github" src="./assets/github.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						<div style="width:1200px; height:100px; padding-top:10px; ">
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#159dff" stroke-width="5"></polygon>
+								<text x="44" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CREATE</text>
+							</svg>
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#d84c2d" stroke-width="5"></polygon>
+								<text x="49" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >VERIFY</text>
+							</svg>
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#90be4f" stroke-width="5"></polygon>
+								<text x="34" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >PACKAGE</text>
+							</svg>
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#9249c9" stroke-width="5"></polygon>
+								<text x="36" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >RELEASE</text>
+							</svg>
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ff2626" stroke-width="5"></polygon>
+								<text x="20" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >CONFIGURE</text>
+							</svg>
+							<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<polygon points="0 0 165 0 185 45 165 90 0 90 15 45" stroke="transparent" fill="#ffc715" stroke-width="5"></polygon>
+								<text x="31" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >MONITOR</text>
+							</svg>
 						</div>
-						<div class="fragment" data-fragment-index="7" style="float:left;width:196px; height:110px;position:relative">
+
+						<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:110px; padding-top:10px; ">
+							<div class="fragment" data-fragment-index="7" style="float:left; width:398; height:110px; position:relative; text-align: center;">
+								<img id="gitlab" src="./assets/gitlab.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="bitbucket" src="./assets/bitbucket.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="github" src="./assets/github.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
+							<div class="fragment" data-fragment-index="7" style="float:left;width:196px; height:110px;position:relative">
+							</div>
+							<div class="fragment" data-fragment-index="8" style="float:left; width:597px; height:110px; position:relative; text-align: center;">
+								<img id="rancher" src="./assets/rancher.png" style="margin:2px auto; background: none; height: 80px; border:none; box-shadow:none" />
+								<img id="kubernetes" src="./assets/kubernetes.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+								<img id="docker-swarm" src="./assets/docker-swarm.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							</div>
 						</div>
-						<div class="fragment" data-fragment-index="8" style="float:left; width:597px; height:110px; position:relative; text-align: center;">
-							<img id="rancher" src="./assets/rancher.png" style="margin:2px auto; background: none; height: 80px; border:none; box-shadow:none" />
-							<img id="kubernetes" src="./assets/kubernetes.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
-							<img id="docker-swarm" src="./assets/docker-swarm.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						<div class="fragment" data-fragment-index="9" style="position:relative;width:1200px; height:110px; background-color: #888; text-align: center; ">
+							<img id="jenkins" src="./assets/jenkins.png" style="margin:2px auto; background: none; height: 110px; border:none; box-shadow:none" />
 						</div>
-					</div>
-					<div class="fragment" data-fragment-index="9" style="position:relative;width:1200px; height:110px; background-color: #888; text-align: center">
-						<img id="jenkins" src="./assets/jenkins.png" style="margin:2px auto; background: none; height: 110px; border:none; box-shadow:none" />
+
 					</div>
 
 					<aside class="notes">
-					git/mercurial
-
-				github/bitbucket
-				maven/gradle
-
-				nexus/artifactory
-
-				docker/vagrant
-
-				elasticstack
 						example to show chaining of tools <br/>
 						again, not exhaustive, may not apply (entirely) to you
 					</aside>
 				</section>
+
 				<!--
 				###########################################
 								CONCLUSION
 				###########################################
 				-->
-
 				<section id="tldl" data-timing="10">
 					<h3>TL;DL in 5 points</h3>
 					<aside class="notes">
@@ -659,19 +657,34 @@
 					</aside>
 				</section>
 
+				<!--
+				###########################################
+								CLOSING
+				###########################################
+				-->
+
 				<section id="thank-you" data-timing="15">
-					<h2>Thank you !</h2>
+					<h2 style="line-height: 600px;">Thank you !</h2>
+					<p style="text-align: right;font-size: 0.4em;position: absolute;bottom:0; width:100%;"><i class="fa fa-rocket" aria-hidden="true"></i> Powered by <a href="https://github.com/hakimel/reveal.js/">Reveal.js</a></p>
+				</section>
+
+				<section id="ready-to-rock" data-timing="10">
+					<h4>Questions time</h4>
+					<img id="rock" src="./assets/rock.jpg" style="border: none; box-shadow: none; height: 84%" />
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section id="sources" data-timing="5">
-					<h4>Sources</h4>
-					<p>Work in progress</p>
-					<!-- list all sources (and images) -->
-					<!-- Lego images: 	 -->
-				</section>
+					<h4 style="padding-bottom: 40px;">Sources</h4>
+					<ul style="list-style-type: none; font-size: 40px;">
+						<li><i class="fa fa-rss" aria-hidden="true"></i> <a href="https://theagileadmin.com/what-is-devops/">The agile admin</a></li>
+						<li><i class="fa fa-rss" aria-hidden="true"></i> <a href="http://www.lemagit.fr/definition/DevOps">Le Mag IT</a></li>
+						<li><i class="fa fa-rss" aria-hidden="true"></i> <a href="http://blog.octo.com/devops/">Octo Blog</a></li>
+						<li><i class="fa fa-rss" aria-hidden="true"></i> <a href="http://www.jedi.be/">Jedi.be</a></li>
 
-				<section id="questions-time" data-timing="25">
-					<h2>Questions time</h2>
+						<li><i class="fa fa-flickr" aria-hidden="true"></i> <a href="https://www.flickr.com/">flickr</a></li>
+					</ul>
 				</section>
 
 			</div>
