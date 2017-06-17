@@ -20,40 +20,24 @@
 								INTRO
 				###########################################
 				-->
-				<section>
+				<section id="index" data-timing="15">
 					<h2>An introduction to DevOps</h2>
 					<h4> - </h4>
 					<h4>Belgium DevOps Meetup</h4>
 
 					<aside class="notes">
 						- WELCOME <br/>
-						- FIRST Meetup around devops <br/>
-						- More to come (tools like Jenkins ...)
 					</aside>
 				</section>
 
-
-				<section data-timing="50">
-					<h4>Tonight</h4>
-
-					<p class="fragment" data-fragment-index="1" > DevOps "definition" </p>
-					<p class="fragment" data-fragment-index="2" > Tools </p>
-					<p class="fragment" data-fragment-index="3" > Case study </p>
-
-					<aside class="notes">
-						To keep ? (depends on the way the meetup is introduced)
-					</aside>
-				</section>
-
-
-				<section data-timing="50" style="line-height:1.2em;">
+				<section id="hi" data-timing="50" style="line-height:1.2em;">
 					<h2 style="margin-bottom: 35px;">Hi !</h2>
 					<img id="hi" src="./assets/42.jpg" style="border: none; box-shadow: none; float: left; height: 300px; width: 300px; border-radius:50%;" />
 
 					<ul>
 						<li>MAXIME CHOFFAT</li>
 						<ul style="margin-bottom: 0.8em;">
-							<li>IT Consultant @Nalys</li>
+							<li>IT Consultant <a href="https://twitter.com/nalysgroup">@NalysGroup</a></li>
 							<li>Agile & DevOps enthousiast</li>
 							<li><i class="fa fa-gamepad" aria-hidden="true"></i> Games lover</li>
 						</ul>
@@ -75,12 +59,6 @@
 							PART 1 : DEFINITION
 				###########################################
 				-->
-				<section id="ultimate-weapon" data-timing="10">
-
-					<img id="ultimate-weapon" src="./assets/ultimate-weapon.jpg" style="border: none; box-shadow: none; height: 95%" />
-
-				</section>
-
 				<section data-timing="70" id="what-is-devops">
 					<div style="position: relative; width: 100%; height: 100px; vertical-align: middle; ">
 						<h4 style="position: absolute; z-index: 1; width: 100%; height: 100%; top:0; right:0; bottom:0; left:0; vertical-align: middle; line-height: 100px; ">
@@ -131,7 +109,7 @@
 						This presentation <span style="color:green;"> will</span> :
 					</h3>
 					<ul>
-						<li class="fragment">Hint on the trend origin</li>
+						<li class="fragment">Give a rough preview</li>
 						<li class="fragment">Try to answer "why" DevOps</li>
 						<li class="fragment">Clarify what it is or not</li>
 					</ul>
@@ -154,7 +132,7 @@
 									<rect x="39" y="0" width="21" height="60" style="fill:#ED2939" />
 								</svg>
 							<span>
-							DevOps" - <i>Patrick Debois, 2009</i>
+							DevOps" - <i>Patrick Debois, 2009 (<a href="www.jedi.be"> jedi.be </a>)</i>
 						</li>
 						<li class="fragment">"Old" concepts</li>
 						<li class="fragment">New trend</li>
@@ -255,6 +233,11 @@
 
 					<img id="careful" src="./assets/careful.jpg" style="border: none; box-shadow: none; height: 95%" />
 
+					<aside class="notes">
+						<li>there is a phantom menace</li>
+						<li>of preconceived ideas</li>
+					</aside>
+
 				</section>
 
 				<section id="what-it-is-not" data-timing="60">
@@ -324,6 +307,17 @@
 					</aside>
 				</section>
 
+				<section id="sum-up" data-timing="30">
+
+					<img id="speed" src="./assets/speed.jpg" style="border: none; box-shadow: none; height: 95%" />
+
+					<aside class="notes">
+						<li>seen theory on how to grow </li>
+						<li>of preconceived ideas</li>
+					</aside>
+
+				</section>
+
 				<!-- DO HERE TRANSITION / SUMMARY -->
 
 				<!--
@@ -334,6 +328,7 @@
 
 				<section id="tools" data-timing="40">
 					<h3>Tools</h3>
+					<img id="ultimate-weapon" src="./assets/ultimate-weapon.jpg" style="border: none; box-shadow: none; height: 85%" />
 					<aside class="notes">
 						- First some tooling & concepts <br/>
 						- Some examples of tools <br/>
@@ -521,15 +516,41 @@
 
 					<aside class="notes">
 						DO YOU KNOW WHAT IT IS ?
-						It is the concept of chaining diffent tools together to make them more powerful
-
-						This is a "generic flow" => you take what you need / add some and <b>adapt</b> it <br/><br/>
+						
+						=> chaining diffent tools together to make them more powerful <br/>
+						"generic flow" => you take what you need / add some and <b>adapt</b> it <br/><br/>
 
 					</aside>
 				</section>
 
-				<section id="stack-example">
-					<h3>A stack example</h3>
+				<section id="flow-example">
+					<h3 style="margin-bottom: 10px">A flow example</h3>
+
+					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:220px; padding-top:10px;">
+						<div class="fragment" data-fragment-index="1" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="git" src="./assets/git.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="mercurial" src="./assets/mercurial.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="2" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="junit" src="./assets/junit.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="selenium" src="./assets/selenium.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="3" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="artifactory" src="./assets/artifactory.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="nexus" src="./assets/nexus.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="4" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="ansible" src="./assets/ansible.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="puppet" src="./assets/puppet.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="5" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="vagrant" src="./assets/vagrant.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="docker" src="./assets/docker.png" style="margin:2px auto; display: block; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="6" style="float:left; width:196px; height:220px; position:relative; display:flex; flex-direction:column-reverse;">
+							<img id="elastic" src="./assets/elastic.png" style="margin:2px auto; display: block; background: none; width: 80px; border:none; box-shadow:none" />
+						</div>
+					</div>
 
 					<div style="width:1200px; height:100px; padding-top:10px">
 						<svg width="185" height="90" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -557,51 +578,36 @@
 							<text x="31" y="55" font-family="Source Sans Pro" font-size="30" fill="#eeeeee" font-weight="bold" >MONITOR</text>
 						</svg>
 					</div>
-					<table style="font-size: 40px; color: #dddddd">
-						<tr>
-							<td>
-								<table style="font-size: 40px; color: #dddddd">
-									<tr>
-										<td>Git/Github</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table style="font-size: 40px; color: #dddddd">
-									<tr>
-										<td>maven</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table style="font-size: 40px; color: #dddddd">
-									<tr>
-										<td>nexus</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table style="font-size: 40px; color: #dddddd">
-									<tr>
-										<td>Docker</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table style="font-size: 40px; color: #dddddd">
-									<tr>
-										<td>Kibana</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td style="border: 1px solid #cccccc; text-align:	center" colspan="3">Jenkins</td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
+
+					<div style="position:relative;font-size:0.6em;text-align:left;width:1200px; height:110px; padding-top:10px">
+						<div class="fragment" data-fragment-index="7" style="float:left; width:398; height:110px; position:relative; text-align: center;">
+							<img id="gitlab" src="./assets/gitlab.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="bitbucket" src="./assets/bitbucket.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="github" src="./assets/github.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+						<div class="fragment" data-fragment-index="7" style="float:left;width:196px; height:110px;position:relative">
+						</div>
+						<div class="fragment" data-fragment-index="8" style="float:left; width:597px; height:110px; position:relative; text-align: center;">
+							<img id="rancher" src="./assets/rancher.png" style="margin:2px auto; background: none; height: 80px; border:none; box-shadow:none" />
+							<img id="kubernetes" src="./assets/kubernetes.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+							<img id="docker-swarm" src="./assets/docker-swarm.png" style="margin:2px auto; background: none; width: 80px; height: 80px; border:none; box-shadow:none" />
+						</div>
+					</div>
+					<div class="fragment" data-fragment-index="9" style="position:relative;width:1200px; height:110px; background-color: #888; text-align: center">
+						<img id="jenkins" src="./assets/jenkins.png" style="margin:2px auto; background: none; height: 110px; border:none; box-shadow:none" />
+					</div>
+
 					<aside class="notes">
+					git/mercurial
+
+				github/bitbucket
+				maven/gradle
+
+				nexus/artifactory
+
+				docker/vagrant
+
+				elasticstack
 						example to show chaining of tools <br/>
 						again, not exhaustive, may not apply (entirely) to you
 					</aside>
