@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/jqcloud.css" />
+		<link rel="stylesheet" type="text/css" href="css/bubbles.css" />
 	</head>
 	<body>
 
@@ -169,7 +170,7 @@
 
 					<img class="fragment" id="business" data-fragment-index="2" src="./assets/business.png" style="background: none;z-index: 11;left:0; top: 80px;height: 250px;position:absolute; border: none; box-shadow: none" />
 					<img class="fragment" id="developer" data-fragment-index="1" src="./assets/developer.png" style="background: none;z-index: 11;right:0; top: 280px;height: 250px;position:absolute; border: none; box-shadow: none" />
-					<img class="fragment" id="operational" data-fragment-index="3	" src="./assets/operational.png" style="background: none;z-index: 11;left:0; top: 480px;height: 250px;position:absolute; border: none; box-shadow: none" />
+					<img class="fragment" id="operational" data-fragment-index="3" src="./assets/operational.png" style="background: none;z-index: 11;left:0; top: 480px;height: 250px;position:absolute; border: none; box-shadow: none" />
 
 					<aside class="notes">
 						- Agility : here to reconcile management (business) and developers <br/>
@@ -180,25 +181,50 @@
 					</aside>
 				</section>
 
-				<section id="dev-and-ops-1" data-timing="50" data-transition="fade-out">
+				<section id="dev-and-ops" data-timing="50">
 					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
 
-					<img class="fragment" id="thewall1" src="./assets/thewall1.jpg" style="border: none; box-shadow: none" />
+					<div style="position: relative; width: 1200px; height: 620px;">
+						<img id="developer" src="./assets/developer.png" style="position: absolute; left: 200px; bottom: 55px; background: none; height: 300px; border: none; box-shadow: none" />
+						<p style="position:absolute; bottom: 0; left: 165px; width: 250px; text-align: center; font-weight: bold; font-size: 0.7em">DEVELOPER</p>
+						
+						<img id="wall1" src="./assets/wall.jpg" style="position: absolute; border: none; box-shadow: none; width: 155px; margin-right: auto; margin-left: auto; bottom: 0; left: 0; right: 0;" />
+						<p style="position:absolute; top: 120px; right: 0; left: 0; width: 100%; text-align: center;margin-right: auto; margin-left: auto; font-size: 0.7em">WALL OF CONFUSION</p>
+						
+						<img id="operational" src="./assets/operational.png" style="position: absolute; right: 200px; bottom: 55px; background: none; height: 300px; border: none; box-shadow: none" />
+						<p style="position:absolute; bottom: 0; right: 160px; width: 250px; text-align: center;font-weight: bold; font-size: 0.7em">OPERATIONAL</p>
+
+
+						<svg class="fragment" data-fragment-index="1" viewbox="0 0 525 425" height="250px" width="280px" version="1.1" style="position: absolute; left: 0; transform: scale(-1, 1); top: 36px;">
+							<path style="stroke:black; stroke-linejoin:round; stroke-width:3px; stroke:#ddd; fill:none"
+								d="M 72.140014,391.37082 L 113.90529,296.44975 C 87.508191,275.83832 40.499658,243.29395 41.222865,182.54446 C 40.834139,90.934537 165.68205,33.400040 263.06697,34.467593 C 392.52123,34.286792 490.51593,101.90676 490.33513,182.00206 C 490.15433,290.48329 338.64222,360.99608 183.87568,323.57006 z " />
+						</svg>
+						<svg class="fragment" data-fragment-index="1" viewbox="0 0 525 425" height="250px" width="280px" version="1.1" style="position: absolute; right: 0; top: 36px;">
+							<path style="stroke:black; stroke-linejoin:round; stroke-width:3px; stroke:#ddd; fill:none"
+								d="M 72.140014,391.37082 L 113.90529,296.44975 C 87.508191,275.83832 40.499658,243.29395 41.222865,182.54446 C 40.834139,90.934537 165.68205,33.400040 263.06697,34.467593 C 392.52123,34.286792 490.51593,101.90676 490.33513,182.00206 C 490.15433,290.48329 338.64222,360.99608 183.87568,323.57006 z " />
+						</svg>
+
+
+						<p class="fragment current-visible" data-fragment-index="1" style="position:absolute; top: 75px; left: 40px; width: 200px; text-align: center;font-weight: bold; font-size: 0.7em">I want change !</p>
+						<p class="fragment current-visible" data-fragment-index="1" style="position:absolute; top: 75px; right: 38px; width: 200px; text-align: center;font-weight: bold; font-size: 0.7em">I want stability !</p>
+
+						<p class="fragment current-visible" data-fragment-index="2" style="position:absolute; top: 105px; left: 40px; width: 200px; text-align: center;font-weight: bold; font-size: 0.7em">CATCH !</p>
+						<p class="fragment current-visible" data-fragment-index="2" style="position:absolute; top: 105px; right: 38px; width: 200px; text-align: center;font-weight: bold; font-size: 0.7em">WHAT ?</p>
+
+						<svg class="fragment current-visible" data-fragment-index="2" height="400" width="1200" version="1.1" style="position: absolute; right: 0; top: 0;">
+							<path stroke-dasharray="5,5" style="stroke:black; stroke-linejoin:round; stroke-width:3px; stroke:#ddd; fill:none"
+								d="M 320 200 Q 600 -100 880 200" />
+						</svg>
+
+						<svg class="fragment current-visible" data-fragment-index="2" height="80px" width="80px" viewBox="0 0 512 512" style="position: absolute; top: 60px; right: 400px;" fill="#ddd" ><path d="M505.122,245.073c-0.55-15.348-2.304-30.38-5.473-44.904H397.809v-17.961h35.923v-17.961h-71.846v-17.962h53.885v-17.961  h-17.962v-17.961h-35.923V92.399h17.962V74.438h-35.924V56.477h17.962V38.515V27.114C329.189,11.561,292.74,2.592,254.116,2.592  C118.264,2.592,7.87,110.385,3.104,245.073H505.122z M164.309,56.477c39.671,0,71.846,32.175,71.846,71.846  c0,39.683-32.175,71.846-71.846,71.846c-39.689,0-71.847-32.164-71.847-71.846C92.462,88.652,124.62,56.477,164.309,56.477"/><path d="M308.001,487.554h-17.962v-17.961h53.885v-17.962h17.962v-17.962h53.885v-17.961h17.961v-17.962h-35.923v-17.961h-53.885  v-17.962h35.924v-17.962h71.846V325.9h-35.923v-17.962h83.879c3.169-14.523,4.923-29.55,5.473-44.904H3.104  c4.765,134.7,115.16,242.481,251.012,242.481c18.522,0,36.52-2.14,53.885-5.929V487.554z"/></svg>
+
+					</div>
 
 					<aside class="notes">
 						- different concerns <br/>
 						- different cultures <br/>
 						- dev = product ( improvements / features )<br/>
-						- ops = service ( backups / supervision )
-					</aside>
-				</section>
-
-				<section id="dev-and-ops-2" data-transition="fade-in">
-					<h3 style="margin-bottom: 0;">A story about Devs and Ops</h3>
-
-					<img id="thewall2" src="./assets/thewall2.jpg" style="border: none; box-shadow: none" />
-
-					<aside class="notes">
+						- ops = service ( backups / supervision ) <br/>
 						- same global objective : <br/>
 						-- system working from outside
 						-- client satisfaction
@@ -207,6 +233,7 @@
 						- DevOps is not limiting to that, wants to be open
 					</aside>
 				</section>
+
 
 				<section id="problem-location" data-timing="40">
 					<i>A problem occuring between devs and ops might find it's solution elsewhere</i>
@@ -233,7 +260,7 @@
 					</aside>
 				</section>
 
-				<section id="be-careful" data-timing="10">
+				<section id="be-careful" data-timing="10" data-transition="fade-out slide-in">
 
 					<img id="careful" src="./assets/careful.jpg" style="border: none; box-shadow: none; height: 95%" />
 
@@ -244,15 +271,17 @@
 
 				</section>
 
-				<section id="what-it-is-not" data-timing="60">
+				<section id="what-it-is-not" data-timing="60" data-transition="fade-in slide-out">
+
 					<h3>What it is not</h3>
-						<ul>
-							<li class="fragment"> Removing Ops</li>
-							<li class="fragment"> Just Tools</li>
-							<li class="fragment"> Just Culture</li>
-							<li class="fragment"> Just Devs and Ops</li>
-							<li class="fragment"> A full job title</li>
-						</ul>
+					<ul>
+						<li class="fragment"> Removing Ops</li>
+						<li class="fragment"> Just Tools</li>
+						<li class="fragment"> Just Culture</li>
+						<li class="fragment"> Just Devs and Ops</li>
+						<li class="fragment"> A full job title</li>
+					</ul>
+
 					<aside class="notes">
 						- this slide = Avoid confusion <br/>
 						- break preconceived idea <br/>
@@ -264,10 +293,10 @@
 					<h3>Why ?</h3>
 						<ul>
 							<li class="fragment" >Teamwork</li>
-							<li class="fragment" >Reduce frustration</li>
-							<li class="fragment" >Better agility</li>
-							<li class="fragment" >Increase quality</li>
-							<li class="fragment" >Reduce Time To Market</li>
+							<li class="fragment" >More agility</li>
+							<li class="fragment" >Increased quality</li>
+							<li class="fragment" >Reduced frustration</li>
+							<li class="fragment" >Reduced Time To Market</li>
 						</ul>
 					<aside class="notes">
 						-> Emphathize this ! <br />
@@ -294,7 +323,7 @@
 					</aside>
 				</section>
 
-				<section id="tips" data-timing="60">
+				<section id="tips" data-timing="60" data-transition="fade-out slide-in">
 					<h3>Tips</h3>
 					<ul>
 						<li class="fragment">Don't waterfall DevOps !</i></li>
@@ -311,7 +340,7 @@
 					</aside>
 				</section>
 
-				<section id="sum-up" data-timing="30">
+				<section id="sum-up" data-timing="30" data-transition="fade-in slide-out">
 
 					<img id="speed" src="./assets/speed.jpg" style="border: none; box-shadow: none; height: 95%" />
 
