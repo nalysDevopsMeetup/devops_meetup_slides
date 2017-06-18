@@ -14,7 +14,7 @@ body {
   background: #222;
   background-color: #222; }
 
-.reveal {
+.reveal, #cover-footer {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 52px;
   font-weight: normal;
